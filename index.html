@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" data-mode="designer">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Venkatesh — Web Designer, AI Builder &amp; Creative Technologist</title>
+  <meta name="description" content="Venkatesh designs immersive web experiences, builds AI-powered tools and crafts scroll-driven 3D interfaces. Based in India. Builder of drone sites, interior design portals, coffee brands and motor experiences." />
+  <meta name="theme-color" content="#05060a" />
+  <meta property="og:title" content="Venkatesh — Web Designer, AI Builder &amp; Creative Technologist" />
+  <meta property="og:description" content="I design experiences. I build futures." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5a1f'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='28' text-anchor='middle' fill='%2305060a'%3EVK%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <p class="loader__label">Venkatesh <span>/ portfolio</span></p>
+    <p class="loader__count"><span id="loaderCount">000</span></p>
+    <p class="loader__status" id="loaderStatus">Loading both versions of me</p>
+    <i class="loader__bar" id="loaderBar"></i>
+  </div>
+
+  <canvas class="gl" id="gl" aria-hidden="true"></canvas>
+  <i class="progress" id="progress" aria-hidden="true"></i>
+  <div class="cursor" id="cursor" aria-hidden="true"><i class="cursor__ring"><b id="cursorLabel"></b></i><i class="cursor__dot"></i></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#hero" aria-label="Venkatesh, back to top">VK</a>
+    <nav class="nav__pill" aria-label="Primary">
+      <a href="#craft">Craft</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav__cta" href="#contact" data-magnetic>Let's talk</a>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" id="hero">
+      <img class="hero__fallback" src="/assets/img/hero-human-sm.webp" alt="" />
+      <div class="hero__copy">
+        <p class="eyebrow" data-intro><i class="dot"></i>Venkatesh <span>— India</span></p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="sr-only">Venkatesh. </span>
+          <span class="ln" data-intro><span>I design</span></span>
+          <span class="ln" data-intro><span>experiences.</span></span>
+        </h1>
+        <p class="hero__roles" data-intro>Web Designer <i>/</i> AI Builder <i>/</i> Creative Technologist</p>
+      </div>
+
+      <div class="hero__foot" data-intro>
+        <p id="heroBody">Web designer and creative technologist. Scroll-driven, three-dimensional interfaces that hold sixty frames a second.</p>
+        <a class="btn" href="#work" data-magnetic data-cursor="">See the work
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </a>
+      </div>
+
+      <dl class="hero__stats" data-intro>
+        <div><dt>projects shipped, live</dt><dd><span data-count="7">0</span><sup>+</sup></dd></div>
+        <div><dt>technologies mastered</dt><dd><span data-count="12">0</span><sup>+</sup></dd></div>
+        <div><dt>frames a second, held</dt><dd><span data-count="60">0</span></dd></div>
+      </dl>
+
+      <div class="hero__dock" data-intro>
+        <div class="switch" role="group" aria-label="Choose which side of me to show">
+          <button type="button" data-mode="designer" aria-pressed="true" data-cursor="">Designer</button>
+          <button type="button" data-mode="engineer" aria-pressed="false" data-cursor="">Builder</button>
+          <i class="switch__thumb" aria-hidden="true"></i>
+        </div>
+        <p class="hero__hint" id="heroHint">Move to augment · Click to switch</p>
+      </div>
+    </section>
+
+    <!-- ───────────── POSITION ───────────── -->
+    <section class="manifesto" id="manifesto">
+      <p class="label" data-reveal>(01) Position</p>
+      <h2 class="manifesto__lines" id="manifestoLines">AI builder by obsession. <em>Designer by instinct.</em> Maker by choice.</h2>
+      <div class="manifesto__foot">
+        <p data-reveal>I work across web design, AI-powered tools and immersive digital experiences — combining creative instinct with emerging technology to build products that feel alive, look stunning and work in the real world.</p>
+        <p class="manifesto__meta" data-reveal>Certified in <b>AI &amp; Software Dev</b><br />Builder of <b>7 live web experiences</b></p>
+      </div>
+    </section>
+
+    <!-- ───────────── CRAFT (pinned) ───────────── -->
+    <section class="craft" id="craft">
+      <div class="craft__pin" id="craftPin">
+        <header class="craft__head">
+          <p class="label">(02) Craft</p>
+          <p class="craft__count"><b id="craftIndex">01</b><span>/ 03</span></p>
+        </header>
+        <div class="craft__grid">
+          <div class="craft__text" id="craftText"></div>
+          <div class="craft__media" id="craftMedia" data-tilt></div>
+          <div class="craft__space" aria-hidden="true"></div>
+        </div>
+        <ol class="craft__rail" id="craftRail"></ol>
+      </div>
+    </section>
+
+    <!-- ───────────── WORK ───────────── -->
+    <section class="work" id="work">
+      <header class="section-head">
+        <p class="label" data-reveal>(03) Selected work</p>
+        <h2 data-split>Built, shipped, <em>running.</em></h2>
+      </header>
+
+      <div class="work__list">
+        <article class="card" style="--i:0; --accent:#7dffb0">
+          <div class="card__meta">
+            <span class="card__index">01</span>
+            <p class="card__kicker">3D web experience</p>
+            <h3>Drone Website</h3>
+            <p class="card__desc">A cutting-edge 3D drone showcase website built with immersive scroll-driven animations, WebGL visuals and cinematic camera movements that put the product front and centre.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Designer · Developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Three.js</li><li>GSAP</li><li>WebGL</li><li>Vite</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://venky-drone-website.vercel.app" target="_blank" rel="noopener" data-cursor="Open">venky-drone-website.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>venky-drone-website.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://venky-drone-website.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Drone Website live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="--i:1; --accent:#e6a756">
+          <div class="card__meta">
+            <span class="card__index">02</span>
+            <p class="card__kicker">Spatial &amp; architectural design</p>
+            <h3>Interior Design Studio</h3>
+            <p class="card__desc">A sleek, minimalist digital portfolio for an interior design practice — seamless scroll transitions, ambient spatial staging and editorial typography that showcases luxury living environments.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Lead Designer · Frontend Engineer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>GSAP</li><li>Three.js</li><li>CSS Grid</li><li>Vite</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://interior-desgin-website.vercel.app" target="_blank" rel="noopener" data-cursor="Open">interior-desgin-website.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>interior-desgin-website.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://interior-desgin-website.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Interior Design Studio live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="--i:2; --accent:#8f7bff">
+          <div class="card__meta">
+            <span class="card__index">03</span>
+            <p class="card__kicker">Luxury hospitality</p>
+            <h3>The Royal Heaven</h3>
+            <p class="card__desc">A premium hospitality web experience for a luxury brand — rich textures, smooth scroll transitions and an atmosphere that sells the feeling before the room.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Designer · Developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>GSAP</li><li>ScrollTrigger</li><li>CSS</li><li>Vite</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://the-royal-heaven.vercel.app" target="_blank" rel="noopener" data-cursor="Open">the-royal-heaven.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>the-royal-heaven.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://the-royal-heaven.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="The Royal Heaven live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="--i:3; --accent:#45e6ff">
+          <div class="card__meta">
+            <span class="card__index">04</span>
+            <p class="card__kicker">Brand &amp; product</p>
+            <h3>Auremont Coffee</h3>
+            <p class="card__desc">A premium coffee brand landing page with scroll-driven storytelling, product showcases and brand-forward design that converts browsers into believers.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Creative developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>GSAP</li><li>Three.js</li><li>Vite</li><li>CSS</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://auremont-coffee-landing-page.vercel.app" target="_blank" rel="noopener" data-cursor="Open">auremont-coffee-landing-page.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>auremont-coffee-landing-page.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://auremont-coffee-landing-page.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Auremont Coffee live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="--i:4; --accent:#ffb347">
+          <div class="card__meta">
+            <span class="card__index">05</span>
+            <p class="card__kicker">Artisanal roast showcase</p>
+            <h3>Velmora Coffee</h3>
+            <p class="card__desc">An immersive sensory journey celebrating single-origin brews — dynamic brew guides, interactive flavor wheel notes and smooth reactive micro-interactions.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Creative Technologist</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Three.js</li><li>GSAP</li><li>Lenis</li><li>WebGL</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://velmora-coffee-project.vercel.app" target="_blank" rel="noopener" data-cursor="Open">velmora-coffee-project.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>velmora-coffee-project.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://velmora-coffee-project.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Velmora Coffee live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="--i:5; --accent:#00f5d4">
+          <div class="card__meta">
+            <span class="card__index">06</span>
+            <p class="card__kicker">Interactive 3D laboratory</p>
+            <h3>3D Build Studio</h3>
+            <p class="card__desc">An experimental 3D canvas exploring generative geometry, physics-based particle interactions and real-time lighting shaders directly in the browser.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>3D &amp; WebGL Developer</dd></div>
+              <div><dt>Built with</dt><dd><ul class="chips"><li>Three.js</li><li>GLSL Shaders</li><li>WebAudio</li><li>Vite</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://my-new-3-d-build-project.vercel.app" target="_blank" rel="noopener" data-cursor="Open">my-new-3-d-build-project.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>my-new-3-d-build-project.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://my-new-3-d-build-project.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="3D Build Studio live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="--i:6; --accent:#ff5a1f">
+          <div class="card__meta">
+            <span class="card__index">07</span>
+            <p class="card__kicker">Automotive</p>
+            <h3>Elevaris Motors</h3>
+            <p class="card__desc">A high-performance automotive web experience for a modern motor brand — cinematic hero sections, 3D product views and motion design that feels as fast as the cars.</p>
+            <dl class="card__facts">
+              <div><dt>Role</dt><dd>Designer · Developer</dd></div>
+              <div><dt>Services</dt><dd><ul class="chips"><li>3D visuals</li><li>Motion design</li><li>Web experience</li><li>Brand design</li><li>Creative tech</li></ul></dd></div>
+            </dl>
+            <a class="link" href="https://elevaris-motors-web.vercel.app" target="_blank" rel="noopener" data-cursor="Open">elevaris-motors-web.vercel.app <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="card__visual card__live" data-tilt>
+            <div class="live-frame">
+              <div class="live-frame__bar"><i></i><i></i><i></i><span>elevaris-motors-web.vercel.app</span></div>
+              <div class="live-frame__viewport">
+                <iframe src="https://elevaris-motors-web.vercel.app" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Elevaris Motors live preview"></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── STACK ───────────── -->
+    <section class="stack" id="stack">
+      <header class="section-head">
+        <p class="label" data-reveal>(04) Stack</p>
+        <h2 data-split>One builder, <em>three toolboxes.</em></h2>
+      </header>
+      <div class="ring" id="ring" aria-hidden="true"><div class="ring__spin" id="ringSpin"></div></div>
+      <div class="stack__groups" id="stackGroups"></div>
+    </section>
+
+    <!-- ───────────── ABOUT ───────────── -->
+    <section class="about" id="about">
+      <div class="about__space" aria-hidden="true"></div>
+      <div class="about__copy">
+        <p class="label" data-reveal>(05) About</p>
+        <h2 data-split>Creative instinct. <em>Technical obsession.</em></h2>
+        <p data-reveal>I work across web design, 3D experiences and AI-powered tools — building digital products that feel alive and look stunning, with the technical depth to make them actually work.</p>
+        <p data-reveal>Certified in AI and software development. Trained in the real world at PRICOL PVT LTD designing for bikes. Now building for brands, coffee shops, hotels, motors and the future.</p>
+        <dl class="facts" data-reveal>
+          <div><dt>Certified</dt><dd>NPTEL &amp; Skill India</dd></div>
+          <div><dt>Projects</dt><dd>7 live sites</dd></div>
+          <div><dt>Based</dt><dd>India</dd></div>
+        </dl>
+        <p class="about__caption" id="aboutCaption" data-reveal></p>
+      </div>
+    </section>
+
+    <!-- ───────────── CONTACT ───────────── -->
+    <section class="contact" id="contact">
+      <p class="label" data-reveal>(06) Contact</p>
+      <h2 class="contact__title" data-split>Have a brand to build <em>or an experience to create?</em></h2>
+      <a class="contact__mail" href="mailto:venkeypro456@gmail.com" data-magnetic data-cursor="Write">
+        <span>venkeypro456@gmail.com</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </a>
+      <ul class="contact__links" data-reveal>
+        <li><a href="https://www.linkedin.com/in/venky-venkatesh-726172415" target="_blank" rel="noopener" data-cursor="Open"><span>LinkedIn</span><b>in/venky-venkatesh</b></a></li>
+        <li><a href="https://instagram.com/mrvenky60" target="_blank" rel="noopener" data-cursor="Open"><span>Instagram</span><b>@mrvenky60</b></a></li>
+        <li><a href="https://x.com/VENKY5789" target="_blank" rel="noopener" data-cursor="Open"><span>X / Twitter</span><b>@VENKY5789</b></a></li>
+        <li><a href="https://my-new-3-d-build-project.vercel.app" target="_blank" rel="noopener" data-cursor="Open"><span>3D Portfolio</span><b>my-new-3-d-build-project</b></a></li>
+      </ul>
+      <footer class="foot">
+        <p>© 2026 Venkatesh</p>
+        <p>Let's build something memorable.</p>
+        <a href="#hero">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
