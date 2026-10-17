@@ -2,6 +2,7 @@
   "name": "venkatesh-portfolio",
   "type": "module",
   "scripts": {
+    "test": "node scripts/smoke-test.mjs",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
