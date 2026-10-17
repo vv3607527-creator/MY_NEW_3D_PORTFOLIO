@@ -61,7 +61,7 @@ export const CRAFT = [
     index: '03',
     title: '3D & Motion',
     kicker: 'From static to cinematic.',
-    body: 'Drone sites, motor experiences, coffee brands, interior portals — every project gets scroll-driven animations, 3D product views and motion that makes a brand feel premium before anyone reads a word.',
+    body: 'Dental healthcare experiences, drone sites, motor brands, coffee showcases, interior portals — every project gets scroll-driven animations, 3D product views and motion that makes a brand feel premium before anyone reads a word.',
     steps: ['Concept', 'Layout', '3D', 'Animation', 'Launch'],
     tags: ['Three.js', 'GSAP', 'ScrollTrigger', 'Lenis', 'WebGL'],
     image: 'assets/img/role-data.webp',
